@@ -1,0 +1,31 @@
+FIND THE FACTORIAL OF A NUMBER:
+Given number=7
+
+KEY:
+* The key here is store the value of n in a variable which is initialized by 1 and multiply both.
+eg: i=i*n
+i is 1
+n is 7 (given value)
+n-- is the update expression
+first iteration i value will be 1*7=7
+next iteration i value will be 7*6=42
+next iteration i value will be 42*5=210 and so on until n>=1.
+
+PROGRAM:
+
+class Factorial
+{
+    public static void main(String[] args)
+    {
+     int n=7;
+     int fact=1;
+     for(;n>=1;n--)
+     {
+      fact=fact*n;
+     }
+    System.out.println(fact);
+    }
+}
+
+OUTPUT:
+5040
